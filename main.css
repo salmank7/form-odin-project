@@ -81,10 +81,11 @@ form label {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 form label input {
+  border: 1px solid black;
   padding: 0.5rem;
   width: 300px;
   outline: none;
@@ -95,10 +96,10 @@ form label input:focus {
   border: 1px solid blue;
 }
 
-form label input:valid {
+form label input:focus:valid {
   border: 1px solid green;
 }
-form label input:invalid {
+form label input:focus:invalid {
   border: 1px solid red;
 }
 .main-content-text {
@@ -133,4 +134,55 @@ form label input:invalid {
 .submit-section .login a {
   text-decoration: none;
   color: #394d28;
+}
+.match {
+  font-size: 12px;
+  text-transform: lowercase;
+  color: red;
+}
+.styled {
+  color: green;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 786px) {
+  .create-account {
+    flex-direction: column;
+  }
+  .logo-section {
+    margin-top: 0;
+  }
+  .logo-section p {
+    font-size: 4rem;
+  }
+  .logo-section img {
+    width: 60px;
+  }
+  .copyright {
+    font-size: 12px;
+    margin-top: 2rem;
+  }
+  .main-content-text {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: normal;
+    align-self: center;
+    text-align: center;
+  }
+  form {
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    justify-items: center;
+  }
+  form label input {
+    width: 380px;
+  }
+  .form-div > p {
+    text-align: center;
+  }
+  .submit-section {
+    padding-top: 4rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
