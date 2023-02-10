@@ -36,7 +36,7 @@
           </div>
           <div class="form-div padded">
               <p>Let's do this!</p>
-              <form>
+              <form id="my-form">
             <label for="fname">
                 First Name
                 <input type="text" required id="fname" name="first_name">
@@ -61,10 +61,14 @@
                 Confirm Password
                 <input type="password" name="password" id="password">
             </label>
-            <button type="submit">Create Account</button>
-        </form>
-    </div>
-        <div class="padded">footer</div>
+          </form>
+        </div>
+        <div class="padded submit-section">
+          <button type="submit" form="my-form">Create Account</button>
+          <div class="login">
+            <p>Already Have an account? </p><a href="#">Log In</a>
+          </div>
+        </div>
         </div>
     </div>
 </section>

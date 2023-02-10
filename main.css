@@ -64,7 +64,7 @@
 }
 .form-div {
 background: white;
-box-shadow: 1px 1px 10px 1px black;
+box-shadow: 1px 1px 10px 0px black;
 }
 .form-div > p {
   font-size: 20px;
@@ -110,4 +110,27 @@ form label input:invalid {
 }
 .main-content-text p:first-child{
   margin-bottom: 2rem;
+}
+.submit-section button{
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #596D48;
+  background: #596D48;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+.submit-section .login {
+  display: flex;
+  gap: 0 .5rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+.submit-section .login a {
+  text-decoration: none;
+  color: #394d28;
 }
