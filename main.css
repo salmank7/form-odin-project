@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "manual";
+  src: url("./assets/Norse-Bold.otf");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.create-account {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.image-container {
+  flex: 1;
+  height: 100vh;
+  background: url("assets/sideimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  color: white;
+  justify-self: center;
+  align-items: start;
+  justify-items: center;
+  width: 100%;
+}
+.logo-section {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 10rem;
+  width: 100%;
+  gap: 0 1rem;
+  padding: 1rem;
+}
+.logo-section p {
+  font-size: 8rem;
+  color: white;
+  font-family: manual;
+}
+.logo-section img {
+  width: 120px;
+}
+.main-content {
+  flex: 2;
+  background: #E5E7EB;
+}
+
+.copyright {
+  font-size: 18px;
+}
+.main-content .content {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.padded {
+  padding:3rem;
+}
+.form-div {
+background: white;
+box-shadow: 1px 1px 10px 1px black;
+}
+.form-div > p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2,350px);
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+form label input {
+  padding: 0.5rem;
+  width: 300px;
+  outline: none;
+  border-radius: 5px;
+  margin: .25rem 0 0.75rem 0;
+}
+form label input:focus {
+  border: 1px solid blue;
+}
+
+form label input:valid {
+  border: 1px solid green;
+}
+form label input:invalid {
+  border: 1px solid red;
+}
+.main-content-text {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  width: 75%;
+}
+.main-content-text p:first-child{
+  margin-bottom: 2rem;
+}
